@@ -1,0 +1,6 @@
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\bin\Debug\NovelSpider.Crawler.IService.dll
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\bin\Debug\NovelSpider.Crawler.IService.pdb
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\obj\Debug\NovelSpider.Crawler.IService.csprojAssemblyReference.cache
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\obj\Debug\NovelSpider.Crawler.IService.csproj.CoreCompileInputs.cache
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\obj\Debug\NovelSpider.Crawler.IService.dll
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Crawler.IService\obj\Debug\NovelSpider.Crawler.IService.pdb

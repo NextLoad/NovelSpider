@@ -1,0 +1,9 @@
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\bin\Debug\NovelSpider.Framework.dll
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\bin\Debug\NovelSpider.Framework.pdb
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\obj\Debug\NovelSpider.Framework.csprojAssemblyReference.cache
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\obj\Debug\NovelSpider.Framework.csproj.CoreCompileInputs.cache
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\obj\Debug\NovelSpider.Framework.dll
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\obj\Debug\NovelSpider.Framework.pdb
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\bin\Debug\log4net.dll
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\bin\Debug\log4net.xml
+D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Framework\obj\Debug\NovelSpider.Framework.csproj.CopyComplete
