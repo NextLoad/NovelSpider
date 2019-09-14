@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.Crawler.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.Model", "NovelSpider.Model\NovelSpider.Model.csproj", "{DFC66E9C-DAB5-4C49-B194-A962CDC73348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.DTO", "NovelDTO\NovelSpider.DTO.csproj", "{F138AB87-2FB6-465E-9779-9418D3F7F590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

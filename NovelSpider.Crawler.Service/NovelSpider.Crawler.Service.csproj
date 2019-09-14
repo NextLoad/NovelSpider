@@ -52,11 +52,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AllVisitCrawler.cs" />
+    <Compile Include="DatabaseServices\BaseService.cs" />
+    <Compile Include="DatabaseServices\NovelCharpterService.cs" />
+    <Compile Include="DatabaseServices\NoverService.cs" />
+    <Compile Include="EntityConfig\NovelCharpterConfig.cs" />
     <Compile Include="EntityConfig\NovelConfig.cs" />
     <Compile Include="NovelDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NovelDTO\NovelSpider.DTO.csproj">
+      <Project>{F138AB87-2FB6-465E-9779-9418D3F7F590}</Project>
+      <Name>NovelSpider.DTO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NovelSpider.Crawler.IService\NovelSpider.Crawler.IService.csproj">
       <Project>{8f9193d2-c9dc-4f7f-b112-e060284c31cf}</Project>
       <Name>NovelSpider.Crawler.IService</Name>
@@ -74,5 +82,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,8 +14,11 @@ namespace NovelSpider.Crawler.Service.EntityConfig
         public NovelConfig()
         {
             this.ToTable("T_NovelSpider");
-            this.Property(n => n.LinkPath).HasMaxLength(300);
-            this.Property(n => n.State).HasMaxLength(2);
+            this.Property(n => n.DetailLinkPath).HasMaxLength(300);
+            this.Property(n => n.Author).HasMaxLength(50);
+            this.Property(n => n.NovelStatus).HasMaxLength(50);
+            this.Property(n => n.NovelType).HasMaxLength(50);
+            this.Property(n => n.Name).HasMaxLength(100);
         }
     }
 }

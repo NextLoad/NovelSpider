@@ -31,7 +31,6 @@ namespace NovelSpider.Framework.Log
         /// <param name="ex"></param>
         public void Error(string msg = "出现异常", Exception ex = null)
         {
-            Console.WriteLine(msg);
             loger.Error(msg, ex);
         }
 
@@ -41,7 +40,6 @@ namespace NovelSpider.Framework.Log
         /// <param name="msg"></param>
         public void Warn(string msg)
         {
-            Console.WriteLine(msg);
             loger.Warn(msg);
         }
 
@@ -51,7 +49,6 @@ namespace NovelSpider.Framework.Log
         /// <param name="msg"></param>
         public void Info(string msg)
         {
-            Console.WriteLine(msg);
             loger.Info(msg);
         }
 
@@ -61,7 +58,6 @@ namespace NovelSpider.Framework.Log
         /// <param name="msg"></param>
         public void Debug(string msg)
         {
-            Console.WriteLine(msg);
             loger.Debug(msg);
         }
     }

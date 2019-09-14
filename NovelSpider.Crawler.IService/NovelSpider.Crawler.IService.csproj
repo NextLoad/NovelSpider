@@ -41,8 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseIServices\INovelCharpterService.cs" />
+    <Compile Include="DatabaseIServices\INovelService.cs" />
     <Compile Include="IAllVisitCrawler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NovelDTO\NovelSpider.DTO.csproj">
+      <Project>{f138ab87-2fb6-465e-9779-9418d3f7f590}</Project>
+      <Name>NovelSpider.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NovelSpider.Model\NovelSpider.Model.csproj">
+      <Project>{DFC66E9C-DAB5-4C49-B194-A962CDC73348}</Project>
+      <Name>NovelSpider.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

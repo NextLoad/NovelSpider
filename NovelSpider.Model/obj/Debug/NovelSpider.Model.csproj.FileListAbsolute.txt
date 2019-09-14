@@ -1,6 +1,0 @@
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\bin\Debug\NovelSpider.Model.dll
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\bin\Debug\NovelSpider.Model.pdb
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\obj\Debug\NovelSpider.Model.csprojAssemblyReference.cache
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\obj\Debug\NovelSpider.Model.csproj.CoreCompileInputs.cache
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\obj\Debug\NovelSpider.Model.dll
-D:\PersonalWorkSpace\github\NovelSpider\NovelSpider.Model\obj\Debug\NovelSpider.Model.pdb

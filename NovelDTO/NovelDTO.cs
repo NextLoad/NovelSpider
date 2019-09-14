@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NovelSpider.Model
+namespace NovelSpider.DTO
 {
-    public class Novel : BaseModel
+    public class NovelDTO:BaseDTO
     {
         /// <summary>
         /// 小说名称
@@ -40,6 +40,5 @@ namespace NovelSpider.Model
         /// 最后更新时间
         /// </summary>
         public DateTime LastUpdateTime { get; set; }
-
     }
 }
