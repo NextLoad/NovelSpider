@@ -141,6 +141,10 @@ namespace NovelSpider.Crawler.Service
                             HtmlNode charpteContentrNode = charpterDoc.DocumentNode.SelectSingleNode(charpterContentPath);
                             //小说章节内容
                             string content = charpteContentrNode.InnerHtml.Replace("&nbsp;", " ").Replace("<br>", "\r");
+                            //charpterName = charpterName.Replace('\\', ' ').Replace('/', ' ').Replace(':', ' ')
+                            //    .Replace('*', ' ').Replace('?', ' ').Replace('"', ' ').Replace('<', ' ').Replace('>', ' ')
+                            //    .Replace('|', ' ');
+                            charpterName = Regex.Replace(charpterName, "[\\/:*?\"<>|]", "");
                             File.AppendAllText($"{floaderPath}/{charpterName}.txt", content);
                             Console.WriteLine($"正在下载第{novelNum}本小说，小说名称：{novelDTO.Name}的第{charpterNum}章的内容");
                         }

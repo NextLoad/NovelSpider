@@ -7,11 +7,13 @@ using System.Threading.Tasks;
 using NovelSpider.Crawler.IService;
 using NovelSpider.Crawler.Service;
 using NovelSpider.Framework.Http;
+using NovelSpider.Framework.Log;
 
 namespace NovelSpider
 {
     class Program
     {
+        private static Log4NetHelper Loger = new Log4NetHelper(typeof(AllVisitCrawler));
         static void Main(string[] args)
         {
             try
@@ -25,7 +27,7 @@ namespace NovelSpider
                 Stopwatch stopwatch = new Stopwatch();
                 stopwatch.Start();
                 IAllVisitCrawler allVisitCrawler = new AllVisitCrawler();
-                allVisitCrawler.Crawl(@"https://www.23us.so/top/allvisit_1.html");
+                allVisitCrawler.Crawl(@"https://www.23us.so/top/allvisit_3.html");
                 stopwatch.Stop();
                 Console.WriteLine($"全部小说已经下载完成，总耗时{stopwatch.Elapsed.Days}天{stopwatch.Elapsed.Hours}小时{stopwatch.Elapsed.Minutes}分钟{stopwatch.Elapsed.Milliseconds}秒");
             }

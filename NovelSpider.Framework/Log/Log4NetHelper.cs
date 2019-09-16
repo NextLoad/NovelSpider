@@ -13,7 +13,7 @@ namespace NovelSpider.Framework.Log
     {
         static Log4NetHelper()
         {
-            XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CfgFiles\\log4net.cfg.xml")));
+            XmlConfigurator.Configure(new FileInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"ConfigFiles\\log4net.cfg.xml")));
             ILog Log = LogManager.GetLogger(typeof(Log4NetHelper));
             Log.Info("系统初始化Log4NetHelper模块");
         }
