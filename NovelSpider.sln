@@ -13,7 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.Crawler.Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.Model", "NovelSpider.Model\NovelSpider.Model.csproj", "{DFC66E9C-DAB5-4C49-B194-A962CDC73348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.DTO", "NovelDTO\NovelSpider.DTO.csproj", "{F138AB87-2FB6-465E-9779-9418D3F7F590}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderForFCCS", "SpiderForFCCS\SpiderForFCCS.csproj", "{C188FD26-9E54-444E-AC7C-E9EAA2689918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderForFCSS.Model", "SpiderForFCSS.Model\SpiderForFCSS.Model.csproj", "{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovelSpider.DTO", "NovelSpider.DTO\NovelSpider.DTO.csproj", "{F138AB87-2FB6-465E-9779-9418D3F7F590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderForFCCS.DTO", "SpiderForFCCS.DTO\SpiderForFCCS.DTO.csproj", "{C75900FE-096A-4350-BAFE-338B4C08DF95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiderForFCCS.BusinessModel", "SpiderForFCCS.BusinessModel\SpiderForFCCS.BusinessModel.csproj", "{92090344-1A88-4948-ABC7-41975A37097E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +49,26 @@ Global
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFC66E9C-DAB5-4C49-B194-A962CDC73348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C188FD26-9E54-444E-AC7C-E9EAA2689918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C188FD26-9E54-444E-AC7C-E9EAA2689918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C188FD26-9E54-444E-AC7C-E9EAA2689918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C188FD26-9E54-444E-AC7C-E9EAA2689918}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F138AB87-2FB6-465E-9779-9418D3F7F590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75900FE-096A-4350-BAFE-338B4C08DF95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75900FE-096A-4350-BAFE-338B4C08DF95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75900FE-096A-4350-BAFE-338B4C08DF95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75900FE-096A-4350-BAFE-338B4C08DF95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92090344-1A88-4948-ABC7-41975A37097E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92090344-1A88-4948-ABC7-41975A37097E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92090344-1A88-4948-ABC7-41975A37097E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92090344-1A88-4948-ABC7-41975A37097E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

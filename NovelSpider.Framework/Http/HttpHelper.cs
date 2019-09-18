@@ -25,9 +25,9 @@ namespace NovelSpider.Framework.Http
             httpClient.DefaultRequestHeaders.Add(@"Accept-Encoding", @"gzip, deflate, br");
             httpClient.DefaultRequestHeaders.Add(@"Accept-Language", @"zh-CN,zh;q=0.9");
             httpClient.DefaultRequestHeaders.Add(@"User-Agent", @"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36");
-            httpClient.DefaultRequestHeaders.Add(@"Cookie", @"Hm_lvt_f040723b21992f74b48618af56517fbb=1568269633; Hm_lpvt_f040723b21992f74b48618af56517fbb=1568269694");
-            httpClient.DefaultRequestHeaders.Add(@"Host", @"www.23us.so");
-            httpClient.DefaultRequestHeaders.Add(@"Referer", @"https://www.23us.so/full.html");
+            //httpClient.DefaultRequestHeaders.Add(@"Cookie", @"Hm_lvt_f040723b21992f74b48618af56517fbb=1568269633; Hm_lpvt_f040723b21992f74b48618af56517fbb=1568269694");
+            //httpClient.DefaultRequestHeaders.Add(@"Host", @"www.23us.so");
+            //httpClient.DefaultRequestHeaders.Add(@"Referer", @"https://www.23us.so/full.html");
             httpClient.DefaultRequestHeaders.Add(@"Upgrade-Insecure-Requests", @"1");
             httpClient.DefaultRequestHeaders.Add(@"Cache-Control", @"max-age=0");
             httpClient.DefaultRequestHeaders.Add(@"Connection", @"keep-alive");

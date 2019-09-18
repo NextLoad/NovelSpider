@@ -150,7 +150,7 @@ namespace NovelSpider.Crawler.Service
                         }
                         catch (Exception ex)
                         {
-                            Loger.Error("下载章节出错", ex);
+                            Loger.Error($"下载小说{novelDTO.Name}{charpterNum}章节出错", ex);
                         }
 
 

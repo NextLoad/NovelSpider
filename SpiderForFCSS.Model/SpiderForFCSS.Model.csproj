@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{332B8F67-6D46-4725-901A-AC627D2473FB}</ProjectGuid>
+    <ProjectGuid>{E1B28BD5-FE90-4782-87B0-6A60955AE3B3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NovelSpider.Framework</RootNamespace>
-    <AssemblyName>NovelSpider.Framework</AssemblyName>
+    <RootNamespace>SpiderForFCSS.Model</RootNamespace>
+    <AssemblyName>SpiderForFCSS.Model</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,9 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,14 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Http\HttpHelper.cs" />
-    <Compile Include="Log\Log4NetHelper.cs" />
-    <Compile Include="ModelDtoTrans\ModelDtoTransHelper.cs" />
+    <Compile Include="Area.cs" />
+    <Compile Include="BaseModel.cs" />
+    <Compile Include="Developer.cs" />
+    <Compile Include="EnumModel\DataStateFCCS.cs" />
+    <Compile Include="HouseType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealEstatePrice.cs" />
+    <Compile Include="RealEstate.cs" />
+    <Compile Include="Tenement.cs" />
+    <Compile Include="TenementCompany.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

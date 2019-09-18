@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B0037B26-1497-4BEC-ACC9-01C00070B404}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NovelSpider.Crawler.Service</RootNamespace>
-    <AssemblyName>NovelSpider.Crawler.Service</AssemblyName>
+    <ProjectGuid>{C188FD26-9E54-444E-AC7C-E9EAA2689918}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SpiderForFCCS</RootNamespace>
+    <AssemblyName>SpiderForFCCS</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -37,8 +39,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.11.12.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.11.12\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -51,58 +53,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllVisitCrawler.cs" />
-    <Compile Include="DatabaseServices\BaseService.cs" />
-    <Compile Include="DatabaseServices\FCCS\BaseService.cs" />
-    <Compile Include="DatabaseServices\FCCS\AreaService.cs" />
-    <Compile Include="DatabaseServices\FCCS\BussinessService\HouseModelAnaly.cs" />
-    <Compile Include="DatabaseServices\FCCS\BussinessService\RealEstateBrief.cs" />
-    <Compile Include="DatabaseServices\FCCS\BussinessService\RealEstatePriceAnaly.cs" />
-    <Compile Include="DatabaseServices\FCCS\DeveloperService.cs" />
-    <Compile Include="DatabaseServices\FCCS\HouseTypeService.cs" />
-    <Compile Include="DatabaseServices\FCCS\RealEstatePriceService.cs" />
-    <Compile Include="DatabaseServices\FCCS\RealEstateService.cs" />
-    <Compile Include="DatabaseServices\FCCS\TenementCompanyService.cs" />
-    <Compile Include="DatabaseServices\FCCS\TenementService.cs" />
-    <Compile Include="DatabaseServices\NovelCharpterService.cs" />
-    <Compile Include="DatabaseServices\NoverService.cs" />
-    <Compile Include="EntityConfig\FCCS\DateTimeForTableName.cs" />
-    <Compile Include="EntityConfig\FCCS\RealEstatePriceConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\TenementConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\TenementCompanyConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\RealEstateConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\HouseTypeConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\DeveloperConfig.cs" />
-    <Compile Include="EntityConfig\FCCS\AreaConfig.cs" />
-    <Compile Include="EntityConfig\NovelCharpterConfig.cs" />
-    <Compile Include="EntityConfig\NovelConfig.cs" />
-    <Compile Include="FCCSDbContext.cs" />
-    <Compile Include="FCCSServices\BriefCrawler.cs" />
-    <Compile Include="FCCSServices\ModelCrawler.cs" />
-    <Compile Include="FCCSServices\NewHouseCrawler.cs" />
-    <Compile Include="FCCSServices\PriceCrawler.cs" />
-    <Compile Include="NovelDbContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NovelSpider.Crawler.IService\NovelSpider.Crawler.IService.csproj">
       <Project>{8f9193d2-c9dc-4f7f-b112-e060284c31cf}</Project>
       <Name>NovelSpider.Crawler.IService</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NovelSpider.DTO\NovelSpider.DTO.csproj">
-      <Project>{f138ab87-2fb6-465e-9779-9418d3f7f590}</Project>
-      <Name>NovelSpider.DTO</Name>
+    <ProjectReference Include="..\NovelSpider.Crawler.Service\NovelSpider.Crawler.Service.csproj">
+      <Project>{b0037b26-1497-4bec-acc9-01c00070b404}</Project>
+      <Name>NovelSpider.Crawler.Service</Name>
     </ProjectReference>
     <ProjectReference Include="..\NovelSpider.Framework\NovelSpider.Framework.csproj">
       <Project>{332b8f67-6d46-4725-901a-ac627d2473fb}</Project>
       <Name>NovelSpider.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="..\NovelSpider.Model\NovelSpider.Model.csproj">
-      <Project>{dfc66e9c-dab5-4c49-b194-a962cdc73348}</Project>
-      <Name>NovelSpider.Model</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SpiderForFCCS.BusinessModel\SpiderForFCCS.BusinessModel.csproj">
-      <Project>{92090344-1a88-4948-abc7-41975a37097e}</Project>
+      <Project>{92090344-1A88-4948-ABC7-41975A37097E}</Project>
       <Name>SpiderForFCCS.BusinessModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\SpiderForFCCS.DTO\SpiderForFCCS.DTO.csproj">
@@ -115,9 +87,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <Content Include="ConfigFiles\log4net.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
