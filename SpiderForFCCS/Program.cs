@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -42,7 +43,7 @@ namespace SpiderForFCCS
                     //briefCrawler.Crawler("http://jx.fccs.com/newhouse/3444789/brief.html");
                     newHouseInfos[keyValuePair.Key].BriefList = (briefCrawler as BriefCrawler).BriefList;
                 }
-
+                System.Threading.Thread.Sleep(3 * 60 * 1000);
                 IModelCrawler modelCrawler = new ModelCrawler();
                 foreach (KeyValuePair<string, NewHouseInfo> keyValuePair in newHouseInfos)
                 {
@@ -50,7 +51,7 @@ namespace SpiderForFCCS
                     //modelCrawler.Crawler("http://jx.fccs.com/newhouse/3444789/model.html");
                     newHouseInfos[keyValuePair.Key].HouseModelInfos = (modelCrawler as ModelCrawler).HouseModelInfos;
                 }
-
+                System.Threading.Thread.Sleep(3*60*1000);
                 IPriceCrawler priceCrawler = new PriceCrawler();
                 foreach (KeyValuePair<string, NewHouseInfo> keyValuePair in newHouseInfos)
                 {
@@ -59,8 +60,8 @@ namespace SpiderForFCCS
                     newHouseInfos[keyValuePair.Key].PriceTrends = (priceCrawler as PriceCrawler).PriceTrends;
                 }
 
-
-                File.WriteAllText(@"C:/FCSS.Json", JsonConvert.SerializeObject(newHouseInfos));
+                string fileExt = String.Format(DateTime.Now.ToString("yyyyMMdd"));
+                File.WriteAllText($@"C:/FCSS{fileExt}.Json", JsonConvert.SerializeObject(newHouseInfos));
 
                 IAreaService areaService = new AreaService();
                 IDeveloperService developerService = new DeveloperService();
